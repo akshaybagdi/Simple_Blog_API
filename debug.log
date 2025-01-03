@@ -1,0 +1,27 @@
+INFO 2024-12-16 10:35:14,174 views User login endpoint accessed.
+INFO 2024-12-16 10:35:15,550 views Token generated successfully.
+INFO 2024-12-16 10:49:25,494 views User login endpoint accessed.
+INFO 2024-12-16 10:49:26,927 views Token generated successfully.
+INFO 2024-12-16 10:52:54,018 views User login endpoint accessed.
+INFO 2024-12-16 10:53:23,049 views User login endpoint accessed.
+INFO 2024-12-16 10:54:19,691 views User login endpoint accessed.
+INFO 2024-12-16 10:54:20,943 views Token generated successfully.
+INFO 2024-12-16 10:54:40,756 views User login endpoint accessed.
+INFO 2024-12-16 10:57:33,425 views User login endpoint accessed.
+WARNING 2024-12-16 11:00:14,963 views Validation failed: Missing required fields
+WARNING 2024-12-16 11:01:27,817 views Validation failed: Missing required fields
+WARNING 2024-12-16 11:01:37,117 views Validation failed: Missing required fields
+INFO 2024-12-16 11:01:58,864 views User login endpoint accessed.
+INFO 2024-12-16 11:02:00,252 views Token generated successfully.
+INFO 2024-12-16 11:02:09,586 views User login endpoint accessed.
+INFO 2024-12-16 11:02:10,833 views Token generated successfully.
+INFO 2024-12-16 11:02:16,008 views User login endpoint accessed.
+INFO 2024-12-16 11:02:17,440 views Token generated successfully.
+INFO 2024-12-16 11:02:27,351 views User login endpoint accessed.
+INFO 2024-12-16 11:02:28,683 views Token generated successfully.
+INFO 2024-12-16 15:07:32,111 views User login endpoint accessed.
+INFO 2024-12-16 15:07:38,475 views Token generated successfully.
+INFO 2024-12-16 15:36:35,392 views User login endpoint accessed.
+INFO 2024-12-16 15:36:42,131 views Token generated successfully.
+INFO 2024-12-16 15:38:40,933 views User login endpoint accessed.
+INFO 2024-12-16 15:38:47,705 views Token generated successfully.

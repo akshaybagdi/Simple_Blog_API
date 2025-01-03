@@ -1,0 +1,44 @@
+INFO 2024-12-24 10:26:46,889 autoreload 8236 8296 Watching for file changes with StatReloader
+INFO 2024-12-24 10:27:06,795 autoreload 8236 8296 D:\SAMTA\TDP\simple_blog\posts\models\models.py changed, reloading.
+INFO 2024-12-24 10:27:08,241 autoreload 15476 7620 Watching for file changes with StatReloader
+INFO 2024-12-24 13:57:47,624 autoreload 15476 7620 D:\SAMTA\TDP\simple_blog\posts\models\models.py changed, reloading.
+INFO 2024-12-24 13:57:50,512 autoreload 16912 16908 Watching for file changes with StatReloader
+INFO 2024-12-24 13:58:25,860 autoreload 16912 16908 D:\SAMTA\TDP\simple_blog\comments\models\models.py changed, reloading.
+INFO 2024-12-24 13:58:27,404 autoreload 15488 15828 Watching for file changes with StatReloader
+INFO 2024-12-30 09:22:07,047 autoreload 12736 14508 Watching for file changes with StatReloader
+INFO 2024-12-30 09:31:54,019 autoreload 15816 18304 Watching for file changes with StatReloader
+INFO 2024-12-30 09:32:30,439 autoreload 15816 18304 D:\SAMTA\TDP\simple_blog\posts\views.py changed, reloading.
+INFO 2024-12-30 09:32:32,107 autoreload 2868 1452 Watching for file changes with StatReloader
+WARNING 2024-12-30 09:33:38,590 log 2868 8324 Unauthorized: /api/posts/postid/
+WARNING 2024-12-30 09:33:38,591 basehttp 2868 8324 "POST //api/posts/postid/ HTTP/1.1" 401 183
+INFO 2024-12-30 09:34:04,942 views 2868 8324 User login endpoint accessed.
+INFO 2024-12-30 09:34:06,442 views 2868 8324 Token generated successfully.
+INFO 2024-12-30 09:34:06,443 basehttp 2868 8324 "POST /api/accounts/login/ HTTP/1.1" 200 520
+WARNING 2024-12-30 09:34:20,375 log 2868 8324 Not Found: /api/posts/postid/
+WARNING 2024-12-30 09:34:20,376 basehttp 2868 8324 "POST //api/posts/postid/ HTTP/1.1" 404 27
+INFO 2024-12-30 09:34:27,796 basehttp 2868 8324 "POST /api/posts/list/ HTTP/1.1" 200 1117
+INFO 2024-12-30 09:34:29,381 basehttp 2868 8324 "POST /api/posts/list/ HTTP/1.1" 200 1117
+WARNING 2024-12-30 09:34:34,821 log 2868 8324 Unauthorized: /api/posts/list/
+WARNING 2024-12-30 09:34:34,822 basehttp 2868 8324 "GET /api/posts/list/?page=2 HTTP/1.1" 401 58
+WARNING 2024-12-30 09:34:41,224 log 2868 8324 Unauthorized: /api/posts/list/
+WARNING 2024-12-30 09:34:41,226 basehttp 2868 8324 "POST /api/posts/list/?page=2 HTTP/1.1" 401 58
+INFO 2024-12-30 09:35:02,122 basehttp 2868 8324 "POST /api/posts/list/?page=2 HTTP/1.1" 200 1101
+WARNING 2024-12-30 09:35:10,323 log 2868 8324 Unauthorized: /api/posts/list/
+WARNING 2024-12-30 09:35:10,324 basehttp 2868 8324 "POST /api/posts/list/?page=2 HTTP/1.1" 401 58
+WARNING 2024-12-30 09:36:10,749 log 2868 16180 Unauthorized: /api/posts/list/
+WARNING 2024-12-30 09:36:10,750 basehttp 2868 16180 "POST /api/posts/list/?page=2 HTTP/1.1" 401 58
+WARNING 2024-12-30 09:37:37,526 log 2868 7092 Unauthorized: /api/posts/list/
+WARNING 2024-12-30 09:37:37,527 basehttp 2868 7092 "POST /api/posts/list/?page=2 HTTP/1.1" 401 58
+INFO 2024-12-30 09:37:51,715 basehttp 2868 7092 "POST /api/posts/list/?page=2 HTTP/1.1" 200 1101
+INFO 2024-12-31 09:46:48,312 autoreload 19132 8348 Watching for file changes with StatReloader
+INFO 2024-12-31 09:47:15,069 autoreload 1452 16552 Watching for file changes with StatReloader
+INFO 2024-12-31 09:47:36,823 autoreload 1452 16552 D:\SAMTA\TDP\simple_blog\posts\models\models.py changed, reloading.
+INFO 2024-12-31 09:47:38,340 autoreload 1224 13316 Watching for file changes with StatReloader
+INFO 2024-12-31 09:48:25,809 autoreload 1224 13316 D:\SAMTA\TDP\simple_blog\posts\views.py changed, reloading.
+INFO 2024-12-31 09:48:27,171 autoreload 13788 10032 Watching for file changes with StatReloader
+INFO 2024-12-31 09:50:27,918 autoreload 13788 10032 D:\SAMTA\TDP\simple_blog\posts\views.py changed, reloading.
+INFO 2024-12-31 09:50:29,278 autoreload 16020 10476 Watching for file changes with StatReloader
+INFO 2024-12-31 09:50:55,833 autoreload 16020 10476 D:\SAMTA\TDP\simple_blog\posts\views.py changed, reloading.
+INFO 2024-12-31 09:50:57,203 autoreload 11380 236 Watching for file changes with StatReloader
+WARNING 2024-12-31 10:49:15,229 log 11380 5420 Not Found: /favicon.ico
+WARNING 2024-12-31 10:49:15,236 basehttp 11380 5420 "GET /favicon.ico HTTP/1.1" 404 2663
