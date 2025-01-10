@@ -42,3 +42,54 @@ INFO 2024-12-31 09:50:55,833 autoreload 16020 10476 D:\SAMTA\TDP\simple_blog\pos
 INFO 2024-12-31 09:50:57,203 autoreload 11380 236 Watching for file changes with StatReloader
 WARNING 2024-12-31 10:49:15,229 log 11380 5420 Not Found: /favicon.ico
 WARNING 2024-12-31 10:49:15,236 basehttp 11380 5420 "GET /favicon.ico HTTP/1.1" 404 2663
+INFO 2025-01-10 13:40:54,476 autoreload 5020 10936 Watching for file changes with StatReloader
+INFO 2025-01-10 13:44:04,349 autoreload 17988 8140 Watching for file changes with StatReloader
+WARNING 2025-01-10 13:44:07,849 log 17988 13452 Not Found: /
+WARNING 2025-01-10 13:44:07,851 basehttp 17988 13452 "GET / HTTP/1.1" 404 2612
+WARNING 2025-01-10 13:44:08,317 log 17988 13452 Not Found: /favicon.ico
+WARNING 2025-01-10 13:44:08,318 basehttp 17988 13452 "GET /favicon.ico HTTP/1.1" 404 2663
+INFO 2025-01-10 13:45:38,277 views 17988 8336 User login endpoint accessed.
+INFO 2025-01-10 13:45:41,361 views 17988 8336 Token generated successfully.
+INFO 2025-01-10 13:45:41,362 basehttp 17988 8336 "POST /api/accounts/login/ HTTP/1.1" 200 520
+INFO 2025-01-10 13:46:55,889 basehttp 17988 3240 "POST /api/posts/list/ HTTP/1.1" 200 1117
+INFO 2025-01-10 14:26:44,113 basehttp 17988 18604 "GET /admin HTTP/1.1" 301 0
+INFO 2025-01-10 14:26:44,180 basehttp 17988 14416 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-01-10 14:26:44,616 basehttp 17988 14416 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4160
+INFO 2025-01-10 14:26:45,227 basehttp 17988 15248 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-01-10 14:26:45,331 basehttp 17988 12216 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2025-01-10 14:26:45,333 basehttp 17988 10304 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-01-10 14:26:45,335 basehttp 17988 8352 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-01-10 14:26:45,335 basehttp 17988 14416 "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2025-01-10 14:26:45,413 basehttp 17988 12068 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-01-10 14:26:45,434 basehttp 17988 8352 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-01-10 14:26:52,686 basehttp 17988 8352 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-01-10 14:26:52,983 basehttp 17988 8352 "GET /admin/ HTTP/1.1" 200 12780
+INFO 2025-01-10 14:26:53,059 basehttp 17988 8352 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-01-10 14:26:53,094 basehttp 17988 12068 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-01-10 14:26:53,096 basehttp 17988 8352 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-01-10 14:26:53,097 basehttp 17988 14416 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-01-10 14:27:01,542 basehttp 17988 14416 "GET /admin/posts/post/ HTTP/1.1" 200 19878
+INFO 2025-01-10 14:27:01,633 basehttp 17988 14416 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-01-10 14:27:01,680 basehttp 17988 10304 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-01-10 14:27:01,726 basehttp 17988 15248 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2025-01-10 14:27:01,730 basehttp 17988 12216 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-01-10 14:27:01,753 basehttp 17988 14416 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-01-10 14:27:01,882 basehttp 17988 14416 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-01-10 14:27:01,892 basehttp 17988 12068 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-01-10 14:27:01,916 basehttp 17988 10304 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-01-10 14:27:01,966 basehttp 17988 12216 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-01-10 14:27:02,282 basehttp 17988 8352 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-10 14:27:02,343 basehttp 17988 8352 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-01-10 14:27:02,467 basehttp 17988 15248 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-01-10 14:27:02,550 basehttp 17988 15248 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-01-10 14:27:02,557 basehttp 17988 8352 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-01-10 14:27:20,469 autoreload 17988 8140 D:\SAMTA\TDP\simple_blog\accounts\views.py changed, reloading.
+INFO 2025-01-10 14:27:23,292 autoreload 18560 19408 Watching for file changes with StatReloader
+INFO 2025-01-10 16:27:48,383 autoreload 18908 8144 Watching for file changes with StatReloader
+WARNING 2025-01-10 16:27:51,859 log 18908 17836 Not Found: /
+WARNING 2025-01-10 16:27:51,860 basehttp 18908 17836 "GET / HTTP/1.1" 404 2612
+INFO 2025-01-10 16:28:15,608 views 18908 2704 User login endpoint accessed.
+INFO 2025-01-10 16:28:17,019 views 18908 2704 Token generated successfully.
+INFO 2025-01-10 16:28:17,021 basehttp 18908 2704 "POST /api/accounts/login/ HTTP/1.1" 200 520
+INFO 2025-01-10 16:34:04,071 autoreload 18908 8144 D:\SAMTA\TDP\simple_blog\accounts\views.py changed, reloading.
+INFO 2025-01-10 16:34:05,759 autoreload 8896 15472 Watching for file changes with StatReloader

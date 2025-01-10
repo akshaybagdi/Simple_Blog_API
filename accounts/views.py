@@ -1,110 +1,110 @@
 
 """___________________________________________________________________________
-   ___________________________________________________________________________"""
+  Claass Bassed Views
 
-# from rest_framework.views import APIView
-# from rest_framework.response import Response
-# from rest_framework import status
-# from rest_framework.permissions import AllowAny, IsAuthenticated
-# from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
-# from django.http import JsonResponse
-# from .middleware.middleware import TokenGenerationMiddleware
-# from django.contrib.auth.models import User
-#
-#
-# class UserRegistrationView(APIView):
-#     permission_classes = [AllowAny]
-#
-#     def post(self, request):
-#         data = request.data
-#         username = data.get('username')
-#         email = data.get('email')
-#         password = data.get('password')
-#         # Ensure all required fields are provided
-#         if not username or not email or not password:
-#             return Response({"Error": "All fields are required."}, status=status.HTTP_400_BAD_REQUEST)
-#
-#         if User.objects.filter(username=username).exists():
-#             return Response({"Error": "Username already exists."}, status=status.HTTP_400_BAD_REQUEST)
-#
-#         if User.objects.filter(email=email).exists():
-#             return Response({"Error": "Email already exists."}, status=status.HTTP_400_BAD_REQUEST)
-#
-#         user = User.objects.create_user(username=username, email=email, password=password)
-#         user.is_active = True  # Ensure the user is active
-#         user.save()
-#         return Response({"Message": "User registered successfully."}, status=status.HTTP_201_CREATED)
-#
-#
-# class UserLogoutView(APIView):
-#     permission_classes = [IsAuthenticated]
-#
-#     def post(self, request):
-#         try:
-#             refresh_token = request.data.get("refresh")  # Extract refresh token from the request
-#             if refresh_token:
-#                 token = RefreshToken(refresh_token)
-#                 token.blacklist()
-#             access_token = request.data.get("access")
-#             if access_token:
-#                 token = AccessToken(access_token)
-#                 token.blacklist()  # Blacklist the access token as well
-#             return Response({"Message": "Successfully logged out."}, status=status.HTTP_200_OK)
-#
-#         except Exception as e:
-#             return Response({"Error": "Invalid token or logout failed."}, status=status.HTTP_400_BAD_REQUEST)
-#
-#
-# class LoginLogoutView(APIView):
-#     permission_classes = [AllowAny]  # Use appropriate permissions if needed
-#
-#     def post(self, request):
-#         data = request.data
-#         if 'username' in data and 'password' in data:
-#             middleware = TokenGenerationMiddleware(None)  # Call the middleware method for token generation
-#             response = middleware.process_request(request)
-#             if isinstance(response, JsonResponse):
-#                 return response  # Return the middleware's response if it handled the request
-#             return JsonResponse(
-#                 {'Error': 'Unexpected error in token generation.'},
-#                 status=500,
-#             )
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
+from django.http import JsonResponse
+from .middleware.middleware import TokenGenerationMiddleware
+from django.contrib.auth.models import User
 
 
-#
-# # Handle logout request
-# if 'refresh' in data or 'access' in data:
-#     try:
-#         refresh_token = data.get("refresh")
-#         access_token = data.get("access")
-#         if refresh_token:
-#             token = RefreshToken(refresh_token)
-#             token.blacklist()
-#         if access_token:
-#             token = AccessToken(access_token)
-#             token.blacklist()
-#         return Response({"message": "Logout successful."}, status=status.HTTP_200_OK)
-#     except Exception as e:
-#         return Response({"error": "Invalid token or logout failed."}, status=status.HTTP_400_BAD_REQUEST)
-# # If the request data does not match either login or logout criteria
-# return Response({"error": "Invalid input. Please provide valid data for login or logout."},
-#                 status=status.HTTP_400_BAD_REQUEST)
+class UserRegistrationView(APIView):
+    permission_classes = [AllowAny]
 
-#
-# class LoginTokenGenerate(APIView):
-#     permission_classes = [AllowAny]
-#
-#     def post(self, request):
-#         middleware = TokenGenerationMiddleware(None)
-#         response = middleware.process_request(request)  # Call the middleware method
-#         if isinstance(response, JsonResponse):
-#             return response  # Return the middleware's response if it handled the request
-#         return JsonResponse(
-#             {'Error': 'Unexpected error in token generation.'},
-#             status=500,
-#         )
-#
-#
+    def post(self, request):
+        data = request.data
+        username = data.get('username')
+        email = data.get('email')
+        password = data.get('password')
+        # Ensure all required fields are provided
+        if not username or not email or not password:
+            return Response({"Error": "All fields are required."}, status=status.HTTP_400_BAD_REQUEST)
+
+        if User.objects.filter(username=username).exists():
+            return Response({"Error": "Username already exists."}, status=status.HTTP_400_BAD_REQUEST)
+
+        if User.objects.filter(email=email).exists():
+            return Response({"Error": "Email already exists."}, status=status.HTTP_400_BAD_REQUEST)
+
+        user = User.objects.create_user(username=username, email=email, password=password)
+        user.is_active = True  # Ensure the user is active
+        user.save()
+        return Response({"Message": "User registered successfully."}, status=status.HTTP_201_CREATED)
+
+
+class UserLogoutView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        try:
+            refresh_token = request.data.get("refresh")  # Extract refresh token from the request
+            if refresh_token:
+                token = RefreshToken(refresh_token)
+                token.blacklist()
+            access_token = request.data.get("access")
+            if access_token:
+                token = AccessToken(access_token)
+                token.blacklist()  # Blacklist the access token as well
+            return Response({"Message": "Successfully logged out."}, status=status.HTTP_200_OK)
+
+        except Exception as e:
+            return Response({"Error": "Invalid token or logout failed."}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class LoginLogoutView(APIView):
+    permission_classes = [AllowAny]  # Use appropriate permissions if needed
+
+    def post(self, request):
+        data = request.data
+        if 'username' in data and 'password' in data:
+            middleware = TokenGenerationMiddleware(None)  # Call the middleware method for token generation
+            response = middleware.process_request(request)
+            if isinstance(response, JsonResponse):
+                return response  # Return the middleware's response if it handled the request
+            return JsonResponse(
+                {'Error': 'Unexpected error in token generation.'},
+                status=500,
+            )
+
+
+
+# Handle logout request
+if 'refresh' in data or 'access' in data:
+    try:
+        refresh_token = data.get("refresh")
+        access_token = data.get("access")
+        if refresh_token:
+            token = RefreshToken(refresh_token)
+            token.blacklist()
+        if access_token:
+            token = AccessToken(access_token)
+            token.blacklist()
+        return Response({"message": "Logout successful."}, status=status.HTTP_200_OK)
+    except Exception as e:
+        return Response({"error": "Invalid token or logout failed."}, status=status.HTTP_400_BAD_REQUEST)
+# If the request data does not match either login or logout criteria
+return Response({"error": "Invalid input. Please provide valid data for login or logout."},
+                status=status.HTTP_400_BAD_REQUEST)
+
+
+class LoginTokenGenerate(APIView):
+    permission_classes = [AllowAny]
+
+    def post(self, request):
+        middleware = TokenGenerationMiddleware(None)
+        response = middleware.process_request(request)  # Call the middleware method
+        if isinstance(response, JsonResponse):
+            return response  # Return the middleware's response if it handled the request
+        return JsonResponse(
+            {'Error': 'Unexpected error in token generation.'},
+            status=500,
+        )
+
+ ___________________________________________________________________________ """
 
 import logging
 from rest_framework.response import Response
