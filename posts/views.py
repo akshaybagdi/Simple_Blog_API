@@ -27,6 +27,24 @@ class PostListView(mixins.ListModelMixin, viewsets.GenericViewSet):
     authentication_classes = [JWTAuthentication]  # Use JWT for authentication
     permission_classes = [IsAuthenticated]  # Authenticated users can write; others can only read
 
+    def list(self, request, *args, **kwargs):
+        # Call the original `list` method
+        response = super().list(request, *args, **kwargs)
+        
+        # Get the response data
+        response_data = response.data
+        
+        # Log the API contract to Notion
+        notion_response = add_api_contract_to_notion(
+            api_name="List Posts",
+            description="Fetches all blog posts with pagination, search, and ordering.",
+            request_payload={"method": "GET", "filters": request.query_params},
+            response_payload=response_data,
+        )
+        print(notion_response)  # Optional: to debug if the contract is successfully logged in Notion
+
+        return response
+
 
 class PostDetailView(mixins.RetrieveModelMixin, viewsets.GenericViewSet):  # Handles retrieving a single post
     queryset = Post.objects.all()

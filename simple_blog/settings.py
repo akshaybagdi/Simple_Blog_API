@@ -14,6 +14,8 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='').split(',')
 
+NOTION_TOKEN = "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"
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

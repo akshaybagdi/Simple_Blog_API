@@ -93,3 +93,9 @@ INFO 2025-01-10 16:28:17,019 views 18908 2704 Token generated successfully.
 INFO 2025-01-10 16:28:17,021 basehttp 18908 2704 "POST /api/accounts/login/ HTTP/1.1" 200 520
 INFO 2025-01-10 16:34:04,071 autoreload 18908 8144 D:\SAMTA\TDP\simple_blog\accounts\views.py changed, reloading.
 INFO 2025-01-10 16:34:05,759 autoreload 8896 15472 Watching for file changes with StatReloader
+INFO 2025-01-12 10:23:52,435 autoreload 16868 4120 Watching for file changes with StatReloader
+INFO 2025-01-12 12:03:08,318 autoreload 2072 18284 Watching for file changes with StatReloader
+INFO 2025-01-12 12:04:47,790 views 2072 18024 User login endpoint accessed.
+INFO 2025-01-12 12:04:49,600 views 2072 18024 Token generated successfully.
+INFO 2025-01-12 12:04:49,602 basehttp 2072 18024 "POST /api/accounts/login/ HTTP/1.1" 200 520
+INFO 2025-01-12 12:05:38,088 basehttp 2072 18024 "POST /api/posts/list/ HTTP/1.1" 200 1117
